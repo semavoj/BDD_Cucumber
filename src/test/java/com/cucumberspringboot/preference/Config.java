@@ -1,7 +1,7 @@
 package com.cucumberspringboot.preference;
 
 import com.cucumberspringboot.preference.data.Border;
-import com.cucumberspringboot.plants.data.Plant;
+import com.cucumberspringboot.preference.data.Plant;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,5 +17,11 @@ public class Config {
     @Scope(SCOPE_CUCUMBER_GLUE)
     public Border getBorder() {
         return new Border();
+    }
+
+    @Bean
+    @Scope(SCOPE_CUCUMBER_GLUE)
+    public Plant getPlant() {
+        return new Plant();
     }
 }

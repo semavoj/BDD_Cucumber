@@ -1,6 +1,6 @@
-package com.cucumberspringboot.plants.stepDefinitions;
+package com.cucumberspringboot.preference.stepDefinitions;
 
-import com.cucumberspringboot.plants.data.Plant;
+import com.cucumberspringboot.preference.data.Plant;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -40,4 +40,3 @@ public class PlantStepsDefinition {
         Assertions.assertTrue(plant.getFertilizerConsumedGr()==plant.getFertilizerNeedGr());
     }
 }
-

@@ -1,9 +1,14 @@
 com/cucumberspringboot/preference/stepDefinitions/ResultStepDefinition.class
 com/cucumberspringboot/preference/stepDefinitions/FontStepDefinition.class
+com/cucumberspringboot/preference/stepDefinitions/BorderStepDefinition.class
+com/cucumberspringboot/plants/Config.class
+com/cucumberspringboot/plants/configuration/CucumberSpringConfiguration.class
+com/cucumberspringboot/plants/CucumberIntegrationTest.class
 com/cucumberspringboot/preference/data/Font.class
 com/cucumberspringboot/preference/stepDefinitions/PreferenceStepDefinition.class
 com/cucumberspringboot/preference/CucumberIntegrationTest.class
 com/cucumberspringboot/preference/configuration/CucumberSpringConfiguration.class
 com/cucumberspringboot/preference/Config.class
-com/cucumberspringboot/preference/stepDefinitions/BorderStepDefinition.class
 com/cucumberspringboot/preference/data/Border.class
+com/cucumberspringboot/plants/stepDefinitions/PlantStepsDefinition.class
+com/cucumberspringboot/plants/data/Plant.class

@@ -1,4 +1,4 @@
-package com.cucumberspringboot.plants.data;
+package com.cucumberspringboot.preference.data;
 
 import lombok.Data;
 import org.springframework.context.annotation.Scope;
