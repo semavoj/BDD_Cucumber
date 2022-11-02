@@ -1,11 +1,13 @@
 package com.cucumberspringboot.preference.stepDefinitions;
 
 import com.cucumberspringboot.preference.data.Plant;
-import io.cucumber.java.en.Given;
+//import io.cucumber.java.en.Given;
+import com.cucumberspringboot.preference.stepDefinitions.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -18,17 +20,18 @@ public class PlantStepsDefinition {
     @Autowired
     private Plant plant;
 
-    @Given("I have a plant")
+    /*@Given("I have a plant")
     public void i_have_a_plant() {
         log.info("Default values are :");
         log.info(plant);
-    }
+    }*/
 
+    @Given("I have a plant")
     @When("I water my plant with {int} liter")
     public void i_water_my_plant_with_liter(Integer int1) {
         plant.setWaterSuppliedLt(int1);
     }
-
+    @Given( "I have a plant")
     @When("I fertilize it with {int} kg of fertilizer every week")
     public void i_fertilize_it_with_kg_of_fertilizer_every_week(Integer int1) {
         plant.setFertilizerConsumedGr(int1);
@@ -39,4 +42,11 @@ public class PlantStepsDefinition {
         Assertions.assertTrue(plant.getWaterSuppliedLt() == plant.getWaterNeedLt());
         Assertions.assertTrue(plant.getFertilizerConsumedGr()==plant.getFertilizerNeedGr());
     }
+
+    @Then("Hejhopp")
+    public void hej() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
 }
